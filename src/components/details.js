@@ -1,35 +1,27 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchTacker } from '../Redux/tracker/tracker';
-import Country from './country';
-
-const Details = () => {
-  const dispatch = useDispatch();
-  const trackerStore = useSelector((store) => Object.values(store.trackerReducer.tracker));
-
-  useEffect(() => {
-    if (!trackerStore.length) {
-      fetchTacker(dispatch);
-    }
-  }, []);
+const Detail = () => {
+  const cities = JSON.parse(localStorage.getItem('currentRegions'));
   return (
-    <div className="container">
-      {
-        trackerStore.map((countries) => (
-          <Country
-          key={countries.id}
-          id={countries.id}
-          name={countries.name}
-          date={countries.date}
-          today_deaths={countries.today_deaths}
-          today_confirmed={countries.today_confirmed}
-          today_recovered={countries.today_recovered}
-          yesterday_deaths={countries.yesterday_deaths}
-          regions={countries.regions}
-          />
-        ))}
-    </div>
+    <div>
+        <div className="d-flex justify-content-between">
+          <div>
+            <div className="d-flex flex-column justify-content-center align-items-end me-3">
+              <h1 className="text-end">{cities.name}</h1>
+              <span className="text-end">{`Total death: ${cities.today_deaths}`}</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          {cities.regions.map((city) => (
+            <div className="d-flex justify-content-between align-items-center ps-3" key={city.id}>
+              <h5>{city.name}</h5>
+              <div className="d-flex  align-items-center justify-content-center text-end my-3 me-2">
+                <span className="me-3">{`${city.today_deaths} dead`}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
   );
 };
 
-export default Details;
+export default Detail;
