@@ -19,6 +19,7 @@ button {
 .button-class {
   font-family: sans-serif;
   background-color: rgba(50, 70, 156, 0.68);
+  padding: 44px;
 }
 
 .nav {

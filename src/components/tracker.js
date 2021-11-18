@@ -17,7 +17,7 @@ const Tacker = () => {
     <div>
       <div className="d-flex flex-column justify-content-center align-items-start img-class">
         <h1 className="header">Covid Tracker</h1>
-        <img src={WorldMap} alt="logo" className="logo col-4" data-testid="img" style={{ width: '67%' }} />
+        <img src={WorldMap} alt="logo" className="logo col-4 opacity-25" data-testid="img" style={{ width: '67%' }} />
       </div>
       <div className="row m-0 p-0">
       {

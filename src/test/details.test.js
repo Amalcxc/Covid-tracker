@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Detail from '../components/Detail';
+import Detail from './mock/details';
 import store from '../redux/configureStore';
 
 describe('test Detail component', () => {
@@ -14,7 +14,7 @@ describe('test Detail component', () => {
         </Router>
       </Provider>,
     );
-    return expect(screen.getByTestId('details-div')).toBeInTheDocument;
+    return expect(screen.getByTestId('img2')).toBeInTheDocument;
   });
 });
 
