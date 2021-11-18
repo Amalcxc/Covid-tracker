@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test jest snapshot render correctly 1`] = `
+<div>
+  <div
+    className="d-flex flex-column justify-content-center align-items-start img-class"
+  >
+    <h1
+      className="header"
+    >
+      Covid Tracker
+    </h1>
+    <img
+      alt="logo"
+      className="logo col-4"
+      data-testid="img"
+      src="worldmap.png"
+      style={
+        Object {
+          "width": "67%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="row m-0 p-0"
+  />
+</div>
+`;
+
+exports[`test with jest snapshot render correctly 1`] = `
+<div>
+  <div
+    className="d-flex flex-column justify-content-center align-items-start img-class"
+  >
+    <h1
+      className="header"
+    >
+      Covid Tracker
+    </h1>
+    <img
+      alt="logo"
+      className="logo col-4"
+      data-testid="img"
+      src="worldmap.png"
+      style={
+        Object {
+          "width": "67%",
+        }
+      }
+    />
+  </div>
+  <div
+    className="row m-0 p-0"
+  />
+</div>
+`;

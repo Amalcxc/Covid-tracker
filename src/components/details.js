@@ -2,7 +2,7 @@ const Detail = () => {
   const cities = JSON.parse(localStorage.getItem('currentRegions'));
   return (
     <div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between" data-testid="details-div">
           <div className="m-3 c-white">
               <h1 className="text-end">{cities.name}</h1>
               <span className="text-end">{`Total death: ${cities.today_deaths}`}</span>
