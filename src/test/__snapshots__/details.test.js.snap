@@ -1,12 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test with jest snapshot should render correctly 1`] = `
+exports[`component functionality component snapshot 1`] = `
 <div
   data-testid="img2"
 >
   <div
     className="d-flex justify-content-between"
   >
+    <div>
+      <img
+        alt="map"
+        className="opacity-25 ms-3"
+      />
+    </div>
     <div>
       <div
         className="m-3 c-white"
@@ -25,7 +31,7 @@ exports[`test with jest snapshot should render correctly 1`] = `
   <div
     className="d-flex justify-content-between align-items-center ps-3 c-white isBlue mt-3"
   >
-    today's confirmed Cases: 
+    todays confirmed Cases: 
   </div>
   <div
     className="mt-1"

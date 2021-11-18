@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Detail = () => {
   const cities = {
     Afghanistan: {
@@ -19,36 +21,38 @@ const Detail = () => {
     Algeria: {
       date: '2021-10-18',
       name: 'Algeria',
-      id: 'Algeria',
+      id: 'Algeria1',
       today_deaths: '1234',
       today_confirmed: '355',
-    }
-  }
+    },
+  };
 
   const region = [
-      {
-        Albania: {
-          date: '2021-10-18',
-          name: 'Albania',
-          id: 'Albania',
-          today_deaths: '1234',
-          today_confirmed: '355',
+    {
+      Albania: {
+        date: '2021-10-18',
+        name: 'Albania',
+        id: 'Albania',
+        today_deaths: '1234',
+        today_confirmed: '355',
 
-        },
-        Albania: {
-          date: '2021-10-18',
-          name: 'Albania',
-          id: 'Albania',
-          today_deaths: '1234',
-          today_confirmed: '355',
-
-        }
-      }
-  ]
+      },
+      Algeria: {
+        date: '2021-10-18',
+        name: 'Algeria',
+        id: 'Algeria1',
+        today_deaths: '1234',
+        today_confirmed: '355',
+      },
+    },
+  ];
 
   return (
     <div data-testid="img2">
         <div className="d-flex justify-content-between">
+          <div>
+            <img className="opacity-25 ms-3" alt="map"/>
+          </div>
           <div>
             <div className="m-3 c-white">
               <h1 className="text-end">{cities.name}</h1>
@@ -56,7 +60,7 @@ const Detail = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-between align-items-center ps-3 c-white isBlue mt-3">today's confirmed Cases: {cities.today_confirmed}</div>
+        <div className="d-flex justify-content-between align-items-center ps-3 c-white isBlue mt-3">todays confirmed Cases: {cities.today_confirmed}</div>
         <div className="mt-1">
           {region.map((city) => (
             <div className="d-flex justify-content-between align-items-center ps-3 regions-class c-white" key={city.id}>

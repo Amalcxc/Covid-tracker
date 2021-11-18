@@ -1,3 +1,4 @@
+import React from 'react';
 import WorldMap from '../assets/worldmap.png';
 
 const Detail = () => {
@@ -15,7 +16,7 @@ const Detail = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-between align-items-center ps-3 c-white isBlue mt-3">today's confirmed Cases: {cities.today_confirmed}</div>
+        <div className="d-flex justify-content-between align-items-center ps-3 c-white isBlue mt-3">todays confirmed Cases: {cities.today_confirmed}</div>
         <div className="mt-1">
           {cities.regions.map((city) => (
             <div className="d-flex justify-content-between align-items-center ps-3 regions-class c-white" key={city.id}>

@@ -1,35 +1,24 @@
-import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+import store from '../Redux/configureStore';
 import Detail from './mock/details';
-import store from '../redux/configureStore';
 
-describe('test Detail component', () => {
-  test('should have a div', () => {
-    render(
+describe('component functionality', () => {
+  test('component snapshot', () => {
+    const tree = renderer.create(
       <Provider store={store}>
-        <Router>
-          <Detail />
-        </Router>
+        <Detail />
       </Provider>,
-    );
-    return expect(screen.getByTestId('img2')).toBeInTheDocument;
-  });
-});
-
-describe('test with jest snapshot', () => {
-  it('should render correctly', () => {
-    const tree = renderer
-      .create(
-        <Provider store={store}>
-          <Router>
-            <Detail />
-          </Router>
-        </Provider>,
-      )
-      .toJSON();
-
+    ).toJSON();
     expect(tree).toMatchSnapshot();
+  });
+
+  test('should render Mission component correctly', () => {
+    const component = render(
+      <Detail/>,
+    );
+    expect(component.container).toHaveTextContent('todays confirmed Cases');
   });
 });

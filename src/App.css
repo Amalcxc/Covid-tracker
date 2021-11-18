@@ -54,6 +54,7 @@ img {
   color: aliceblue;
 }
 
-.card-title, .card-text {
+.card-title,
+.card-text {
   color: aliceblue;
 }

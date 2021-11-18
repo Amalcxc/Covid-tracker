@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
