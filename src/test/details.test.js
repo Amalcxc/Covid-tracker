@@ -1,14 +1,15 @@
+import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import store from '../Redux/configureStore';
+import createStore from '../Redux/configureStore';
 import Detail from './mock/details';
 
 describe('component functionality', () => {
   test('component snapshot', () => {
     const tree = renderer.create(
-      <Provider store={store}>
+      <Provider store={createStore}>
         <Detail />
       </Provider>,
     ).toJSON();
