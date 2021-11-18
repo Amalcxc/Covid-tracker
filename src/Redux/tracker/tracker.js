@@ -15,21 +15,6 @@ const CurrentDate = () => {
   return `${year}-${month}-${date}`;
 };
 
-const trackerReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case SET_TRACKER:
-      return { ...state, tracker: action.payload };
-    case SET_REGIONS:
-      console.log(state.tracker);
-      return {
-        ...state,
-        currentRegions: Object.values(state.tracker).filter((c) => c.id === action.payload)[0],
-      };
-    default:
-      return state;
-  }
-};
-
 const setTacker = (payload) => ({
   type: SET_TRACKER,
   payload,
@@ -46,6 +31,20 @@ export const fetchTacker = (dispatch) => {
     .then((response) => {
       dispatch(setTacker(response.data.dates[CurrentDate()].countries));
     });
+};
+
+const trackerReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case SET_TRACKER:
+      return { ...state, tracker: action.payload };
+    case SET_REGIONS:
+      return {
+        ...state,
+        currentRegions: Object.values(state.tracker).filter((c) => c.id === action.payload)[0],
+      };
+    default:
+      return state;
+  }
 };
 
 export default trackerReducer;
