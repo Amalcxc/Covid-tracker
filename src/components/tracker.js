@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchTacker, setRegions } from '../Redux/tracker/tracker';
-import WorldMap from '../assets/worldmap.jpeg';
+import WorldMap from '../assets/worldmap.png';
 
 const Tacker = () => {
   const dispatch = useDispatch();
@@ -13,16 +13,16 @@ const Tacker = () => {
     }
   }, []);
   const navigate = useNavigate();
-
   return (
-    <div className="container">
-      <div className="d-flex flex-column justify-content-center align-items-start">
-        <h1>World Covid cases</h1>
-        <img src={WorldMap} alt="logo" className="logo col-4" />
+    <div>
+      <div className="d-flex flex-column justify-content-center align-items-start img-class">
+        <h1 className="header">Covid Tracker</h1>
+        <img src={WorldMap} alt="logo" className="logo col-4" style={{ width: '67%' }} />
       </div>
+      <div className="row m-0 p-0">
       {
         trackerStore.map((countries) => (
-        <div className="button-grid " key={countries.id}>
+        <div key={countries.id} className="col-sm-6 col-md-6 col-lg-6 button-class">
         <button
         onClick={() => {
           dispatch(setRegions(countries.id));
@@ -31,14 +31,16 @@ const Tacker = () => {
         }}
         type="button"
         to="/Details"
-        key={countries.id}>
+        key={countries.id}
+        className="m-1 p-4 btn"
+        >
 
-        <div className="d-flex flex-column align-items-end justify-content-end text-end">
-        <h1>{countries.name}</h1>
-        <span>{countries.today_confirmed}</span>
-        </div>
+        <h3 className="card-title">{countries.name}</h3>
+        <span className="card-text">{countries.today_confirmed}</span>
+
         </button></div>))
       }
+      </div>
     </div>
   );
 };

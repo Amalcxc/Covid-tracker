@@ -1,4 +1,58 @@
-.button-grid {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
+body {
+  background-color: rgba(30, 62, 204, 0.68);
+  font-family: sans-serif;
+}
+
+.c-white {
+  color: aliceblue;
+}
+
+.isBlue {
+  background-color: rgba(42, 57, 126, 0.68);
+}
+
+button {
+  width: 100%;
+  height: 100%;
+}
+
+.button-class {
+  font-family: sans-serif;
+  background-color: rgba(50, 70, 156, 0.68);
+}
+
+.nav {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  top: 45%;
+  left: 89%;
+}
+
+.button-class:nth-child(3n+1) {
+  background: rgba(42, 57, 126, 0.68);
+}
+
+.regions-class:nth-child(even) {
+  background: rgba(42, 57, 126, 0.68);
+}
+
+img {
+  width: 100%;
+}
+
+.img-class {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  right: 4%;
+  color: aliceblue;
+}
+
+.card-title, .card-text {
+  color: aliceblue;
 }
