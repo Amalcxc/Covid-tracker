@@ -3,6 +3,21 @@ import WorldMap from '../assets/worldmap.png';
 
 const Detail = () => {
   const cities = JSON.parse(localStorage.getItem('currentRegions'));
+  console.log(cities);
+  if (cities === null) {
+    return (
+      <div className="container p-4">
+        <div className="row">
+          <div className="col-sm-4" />
+          <div className="col-sm-8">
+            <h1 className="text-white">
+              Loading
+            </h1>
+          </div>
+        </div>
+      </div>
+    );
+  }
   return (
     <div data-testid="img2">
         <div className="d-flex justify-content-between">

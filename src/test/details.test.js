@@ -5,7 +5,8 @@ import { Provider } from 'react-redux';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import store from '../Redux/configureStore';
-import Detail from './mock/details';
+import Mock from './mock/details';
+import Detail from '../components/details';
 
 describe('component functionality', () => {
   test('component snapshot', () => {
@@ -19,7 +20,7 @@ describe('component functionality', () => {
 
   test('should render Mission component correctly', () => {
     const component = render(
-      <Detail/>,
+      <Mock/>,
     );
     expect(component.container).toHaveTextContent('todays confirmed Cases');
   });
