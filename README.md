@@ -44,7 +44,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Vidoe
 
-- More information [Watch](https:)
+- More information [Watch](https://www.loom.com/share/43bb8fbf942c4655b5d1b6fc776af746)
 
 ## Made with
 
