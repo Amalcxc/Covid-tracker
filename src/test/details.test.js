@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
