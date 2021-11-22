@@ -1,17 +1,19 @@
 # Covid Tracker
 
+the covid tracker is an App that allows you to keep track of the covid-19 Deaths by country and by date Around the world. You can check information by contry and some countries have information for city.
+
+The app consist of 2 pages. Home that shows you all the countries and details page that shows each country and city information.
+
 <img src="Screenshot1.png">
 <img src="Screenshot2.png">
-
-the covid tracker is an App that allows you to keep track of the covid-19 Deaths by country and by date Around the world. You can check information by contry and some countries have information for city.
 
 ## Getting Started
 
 In the project directory, you can run:
 
 ```bash
-$ npm install
-$ npm start
+$ ` npm install `
+$ ` npm start `
 ```
 
 Runs the app in the development mode.\
@@ -55,11 +57,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - rudex
 - Jest testing framework
 
-## Acknowledgment
-
-- Original design by: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
-
-
 ## Author
 
 
@@ -85,6 +82,7 @@ Give a ⭐️ if you like this project! ⭐️
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
+- Original design by: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License
 
