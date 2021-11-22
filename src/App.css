@@ -3,10 +3,13 @@ html {
   padding: 0;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgba(30, 62, 204, 0.68);
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 
 .c-white {
