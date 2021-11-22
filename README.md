@@ -43,10 +43,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## Demo
 
 - Open [live demo](https://nchorage-03766.herokuapp.com/) 
-
-## Vidoe
-
-- More information [Watch](https://www.loom.com/share/43bb8fbf942c4655b5d1b6fc776af746)
+- 
 
 ## Made with
 
