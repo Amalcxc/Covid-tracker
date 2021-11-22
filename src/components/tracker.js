@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { fetchTacker, setRegions } from '../Redux/tracker/tracker';
 import WorldMap from '../assets/worldmap.png';
 
-const Tacker = () => {
+const Tracker = () => {
   const dispatch = useDispatch();
+  const [searchItem, setSearchItem] = useState('');
   const trackerStore = useSelector((store) => Object.values(store.trackerReducer.tracker));
   useEffect(() => {
     if (!trackerStore.length) {
@@ -19,9 +20,19 @@ const Tacker = () => {
         <h1 className="header">Covid Tracker</h1>
         <img src={WorldMap} alt="logo" className="logo col-4 opacity-25" data-testid="img" style={{ width: '67%' }} />
       </div>
+      <input type="text" className="form-control delete-shadow" placeholder="Search by country name" onChange={(e) => {
+        setSearchItem(e.target.value);
+      }} />
       <div className="row m-0 p-0">
       {
-        trackerStore.map((countries) => (
+        trackerStore.filter((countries) => {
+          if (searchItem === '') {
+            return countries;
+          } if (countries.name.toLowerCase().includes(searchItem.toLowerCase())) {
+            return countries;
+          }
+          return false;
+        }).map((countries) => (
         <div key={countries.id} className="col-sm-6 col-md-6 col-lg-6 button-class">
         <button
         onClick={() => {
@@ -45,4 +56,4 @@ const Tacker = () => {
   );
 };
 
-export default Tacker;
+export default Tracker;
