@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+html {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: rgba(30, 62, 204, 0.68);
+  font-family: sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.c-white {
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.isBlue {
+  background-color: rgba(42, 57, 126, 0.68);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  width: 100%;
+  height: 100%;
+}
+
+.button-class {
+  font-family: sans-serif;
+  background-color: rgba(50, 70, 156, 0.68);
+  padding: 44px;
+}
+
+.nav {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  top: 45%;
+  left: 89%;
+}
+
+.button-class:nth-child(3n+1) {
+  background: rgba(42, 57, 126, 0.68);
+}
+
+.regions-class:nth-child(even) {
+  background: rgba(42, 57, 126, 0.68);
+}
+
+img {
+  width: 100%;
+}
+
+.img-class {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  right: 4%;
+  color: aliceblue;
+}
+
+.card-title,
+.card-text {
+  color: aliceblue;
 }
