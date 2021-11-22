@@ -1,8 +1,8 @@
 # Covid Tracker
 
-the covid tracker is an App that allows you to keep track of the covid-19 Deaths by country and by date Around the world. You can check information by contry and some countries have information for city.
+the covid tracker is an App that allows you to keep track of the covid-19 Deaths by country and by date Around the world. You can check information by country and some countries have information for the city.
 
-The app consist of 2 pages. Home that shows you all the countries and details page that shows each country and city information.
+The app consists of 2 pages. A home that shows you all the countries and details page that shows each country and city information.
 
 <img src="Screenshot1.png">
 <img src="Screenshot2.png">
