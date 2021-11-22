@@ -1,7 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import trackerReducer from './tracker/tracker';
+import trackerReducer from './tracker/tracker.js';
 
 const reducers = combineReducers({
   trackerReducer,

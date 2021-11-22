@@ -3,7 +3,6 @@ import WorldMap from '../assets/worldmap.png';
 
 const Detail = () => {
   const cities = JSON.parse(localStorage.getItem('currentRegions'));
-  console.log(cities);
   if (cities === null) {
     return (
       <div className="container p-4">
