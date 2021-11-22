@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { ArrowLeft } from 'react-bootstrap-icons';
-import { BsMicFill } from 'react-icons/bs';
+import { BsMicFill } from 'react-icons/bs/index.js';
 
 const Nav = () => (
   <div>
