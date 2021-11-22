@@ -1,13 +1,12 @@
-* {
+html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
   background-color: rgba(30, 62, 204, 0.68);
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 
 .c-white {
