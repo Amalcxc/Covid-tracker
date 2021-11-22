@@ -12,8 +12,8 @@ The app consist of 2 pages. Home that shows you all the countries and details pa
 In the project directory, you can run:
 
 ```bash
-$ ` npm install `
-$ ` npm start `
+ ` $ npm install `
+ ` $ npm start `
 ```
 
 Runs the app in the development mode.\
@@ -21,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ```bash
-$ npm test
+ ` $ npm test ` 
 ```
 
 Launches the test runner in the interactive watch mode.\
@@ -29,7 +29,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 
 ```bash
-$ npm build
+ ` $ npm build ` 
 ```
 
 Builds the app for production to the `build` folder.\
