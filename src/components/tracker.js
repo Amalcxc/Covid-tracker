@@ -14,6 +14,22 @@ const Tracker = () => {
     }
   }, []);
   const navigate = useNavigate();
+  let alternate = true;
+  let nextLightColor = 0;
+  const Colors = (index) => {
+    if (index === nextLightColor && alternate) {
+      alternate = false;
+      nextLightColor = index + 3;
+      return 'isBlue grid-item-navlink';
+    }
+    if (index === nextLightColor && alternate === false) {
+      alternate = true;
+      nextLightColor = index + 1;
+      return 'isBlue grid-item-navlink';
+    }
+
+    return 'grid-item-navlink dark-background';
+  };
   return (
     <div>
       <div className="d-flex flex-column justify-content-center align-items-start img-class">
@@ -32,8 +48,8 @@ const Tracker = () => {
             return countries;
           }
           return false;
-        }).map((countries) => (
-        <div key={countries.id} className="col-sm-6 col-md-6 col-lg-6 button-class">
+        }).map((countries, index) => (
+        <div key={countries.id} className={`"col-sm-6 col-md-6 col-lg-6" ${Colors(index)}`}>
         <button
         onClick={() => {
           dispatch(setRegions(countries.id));
