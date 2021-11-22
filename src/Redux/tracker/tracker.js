@@ -1,4 +1,3 @@
-/* eslint-disable */
 import axios from 'axios';
 
 const SET_TRACKER = 'covid-tracker/tracker/SET-TRACKER';

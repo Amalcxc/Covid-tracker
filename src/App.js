@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Nav from './components/nav';
-import Tracker from './components/tracker';
-import Details from './components/details';
+import Nav from './components/nav.js';
+import Tracker from './components/tracker.js';
+import Details from './components/details.js';
 
 function App() {
   return (
