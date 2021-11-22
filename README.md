@@ -55,9 +55,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - rudex
 - Jest testing framework
 
-## Original design
+## Acknowledgment
 
-- by: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- Original design by: [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 
 ## Author
