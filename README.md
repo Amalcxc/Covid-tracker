@@ -40,7 +40,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Demo
 
-- Open [live demo](https://amal-covid-tracker.herokuapp.com/) 
+- Open [live demo](https://nchorage-03766.herokuapp.com/) 
 
 ## Vidoe
 
