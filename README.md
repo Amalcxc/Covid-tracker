@@ -42,7 +42,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Demo
 
-- Open [live demo](https://nchorage-03766.herokuapp.com/) 
+- Open [live demo](https://stoic-ramanujan-84c63a.netlify.app/) 
 - 
 
 ## Made with
