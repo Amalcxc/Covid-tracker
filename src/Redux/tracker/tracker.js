@@ -11,7 +11,7 @@ const initialState = {
 const CurrentDate = () => {
   const time = new Date();
   const date = time.getDate();
-  const month = time.getMonth() + 1;
+  const month = `0 + ${(time.getMonth() + 1).slice(-2)}`;
   const year = time.getFullYear();
   return `${year}-${month}-${date}`;
 };
