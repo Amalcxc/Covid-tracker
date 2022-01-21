@@ -10,7 +10,7 @@ const initialState = {
 const CurrentDate = () => {
   const time = new Date();
   const date = time.getDate();
-  const month = `0 + ${(time.getMonth() + 1).slice(-2)}`;
+  const month = (time.getMonth() + 1).toString().padStart(2, '0');
   const year = time.getFullYear();
   return `${year}-${month}-${date}`;
 };
