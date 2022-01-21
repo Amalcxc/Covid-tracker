@@ -1,4 +1,3 @@
-/* eslint-disable */
 import axios from 'axios';
 
 const SET_TRACKER = 'covid-tracker/tracker/SET-TRACKER';
@@ -11,7 +10,7 @@ const initialState = {
 const CurrentDate = () => {
   const time = new Date();
   const date = time.getDate();
-  const month = time.getMonth();
+  const month = `0 + ${(time.getMonth() + 1).slice(-2)}`;
   const year = time.getFullYear();
   return `${year}-${month}-${date}`;
 };
